@@ -1,11 +1,15 @@
-// Todo: Make M+ M- and MC functional
 let string = "";
 let buttons = document.querySelectorAll('.button');
 Array.from(buttons).forEach((button)=>{
   button.addEventListener('click', (e)=>{
     if(e.target.innerHTML == '='){
       string = eval(string);
+      if(eval(string) == 'Infinity'){
+        document.querySelector('input').value = "Can't Divide By  Zero";
+      }
+      else{
       document.querySelector('input').value = string;
+      }
     }
     else if(e.target.innerHTML == 'C'){
       string = ""
