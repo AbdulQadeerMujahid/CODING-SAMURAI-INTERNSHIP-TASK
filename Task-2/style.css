@@ -32,16 +32,6 @@ body{
     font-size: 19px;
  }
 
- i{
-   width: 60px;
-   height: 41px;
-   color: black;
-   cursor: pointer;
-   font-family: "Nanum Gothic Coding", monospace;
-   border-radius: 2px;
-   font-size: 23px;
-}
-
  .text ul{
     position: relative;
     background-color: darkturquoise;
@@ -52,6 +42,6 @@ body{
  }
  .text ul i{
     position: absolute;
-    right: -30px;
+    right: 5px;
     cursor: pointer;
  }
